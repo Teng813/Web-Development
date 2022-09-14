@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Clinic Harmony</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <center><img src="Images/Logo.png" width="100" height="100"> 
+        <br/><h1>Clinic Harmony</h1>
+            <h3 >Address : 10, Jalan Harmony,
+                <br/>11500 Pulau Pinang.</h3>
+            <p> social media icons </p></center>
+        <div>
+            <div >
+                <table>
+                <tr>
+                        <td style="width:25%;"><a href="homepage.html" class="active">Home</a></td>
+                        <td style="width:25%;"> <a href="about.html" >About Us</a></td>
+                        <td style="width:25%;"><a href="services.html" >Services</a></td>
+                        <td  style="width:25%;"><a href="contactUs.html" >Contact Us</a></td>    
+                        <td  style="width:25%;"><a href="booking.html" >Book An Appointment</a></td>  
+                    </tr>
+
+                </table>   
+                <hr/>    
+            </div>
+            
+            <h1><center>Book An Apppointment</center></h1>
+            
+            <form action="booking.html" method="POST">
+            <table>
+                <tr>
+                    <td><h3>1. Personal Details </h3></td>
+                </tr>
+                
+                <tr height='80px'>
+                    <td style="width:30%;">Title :
+                        <br/><input type="text" id="title" name="title"></td>
+                    <td style="width:30%;">First Name :
+                        <br/><input type="text" id="fname" name="fname"></td>
+                    <td style="width:30%;">Last Name :
+                        <br/><input type="text" id="fname" name="lname"></td>
+                </tr>
+                
+                <tr height='80px'>
+                    <td style="width:40%;">Gender : 
+                        <br/><select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select></td>
+                    <td style="width:40%;">Date of Birth :
+                        <input type='date' id='dateBirth' name='dateBirth'></td>
+                    <td style="width:30%;">Are you over 18 ? :
+                        <br/><input type="radio" id='legal' name="legal" value="Yes">
+                            <label for="legal">Yes</label>
+                        <br/><input type="radio" id='legal' name="legal" value="No">
+                            <label for="legal">No</label></td></td>
+                </tr>
+                
+                <tr height='50px'>
+                    <td style="width:30%;">Address Line 1 :
+                        <br/><input type="text" id="address1" name="address1"></td>
+                    <td style="width:30%;">Address Line 2 :
+                        <br/><input type="text" id="address2" name="address1"></td>
+                </tr>
+                
+                <tr height='50px'>
+                    <td style="width:30%;">City :
+                        <br/><input type="text" id="city" name="city"></td>
+                    <td style="width:30%;">ZIP or Postal Code :
+                        <br/><input type="text" id="zip" name="zip"></td>
+                    <td style="width:30%;">State :
+                        <br/><input type="text" id="state" name="state"></td>
+                </tr>
+                
+                <tr height='80px'>
+                    <td style="width:30%;">Phone number :
+                        <br/><input type="text" id="phoneno" name="phoneno"></td>
+                    <td style="width:30%;">Email :
+                        <br/><input type="text" id="email" name="email"></td>
+                </tr>
+                
+               
+            
+                
+            
+                
+                <tr height='80px'>
+                    <td><h3>2. Appointment Details </h3></td>
+                </tr>
+                
+                <tr height='80px'>
+                    <td style="width:30%;">Prefered Date :
+                        <br/><input type="date" id='date' name="date"></td>
+                    <td style="width:30%;">Preffered Time :
+                        <br/><input type="time" id='time' name="time"></td>
+                </tr>
+                
+            </table>
+            
+            <table> 
+                <tr height='80px'>
+                    <td style="width:100%;">Has the patient been seen at Clinic Harmony in the past ? :
+                        <br/><input type="radio" id='part2' name="part2" value="Yes">
+                            <label for="part2">Yes</label>
+                        <br/><input type="radio" id='part2' name="part2" value="No">
+                            <label for="part2">No</label></td>
+                </tr>
+                
+                <tr height='80px'>
+                    <td style="width:100%;">Does the patient have a diagnosis ? :
+                        <br/><input type="radio" id='part2' name="part2" value="Yes">
+                            <label for="part2">Yes</label>
+                        <br/><input type="radio" id='part2' name="part2" value="No">
+                            <label for="part2">No</label></td>
+                </tr>
+                
+                <tr height='80px'>
+                    <td style="width:100%;">If yes, please describe :
+                        <br/><textarea cols="100" row="10"></textarea></td>
+                </tr>
+                
+                <tr height='80px'>
+                    <td style="width:100%;">Reason for appointment :
+                        <br/><i>Please let us know why the patient needs this appointment. (i.e. symptoms or part of the body that is affected.) </i>
+                        <br/><textarea cols="100" row="10"></textarea></td>
+                </tr>
+                
+                
+            </table>
+                <br/><br/><center><input type="submit" value="Submit"></center>
+            
+            </form>
+            
+    </body>
+</html>
