@@ -10,102 +10,231 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
+    <style>
+        h1{
+            font-family: Georgia;
+            font-size :45px;
+            color: #475993;
+        }  
+        h2{
+            font-family: Georgia;
+            font-size :30px;
+            color: #475993;
+        }
+        h3{
+            font-family: Georgia;
+            font-size :25px;
+        }
+        p{
+            font-size: 20px;
+            font-family: Garamond; 
+        }
+        body{
+            font-size: 20px;
+            font-family: Garamond;
+            background-image: url("Images/wallpaper1.jpg");
+            background-size: auto;
+            background-size: contain;
+        }
+        hr{
+            border : 1px solid #475993;
+        }
+        #topMenu a:link{
+            font-family: Georgia;
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+        }
+        #topMenu {
+            padding: 0px 20px 0px 20px;
+        }
+        #topMenu img{
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        #topMenu a:visited{
+            color: black;
+        }
+        #topMenu a:hover{
+            background-color: #475993;
+            color: white;
+        }
+        #content{
+            padding-left: 70px;
+            padding-right: 50px;
+        }
+        #content td{
+            width: 40%;
+        }
+        #content2{
+            padding-left: 70px;
+            padding-right: 50px;
+        }
+        #content2 td{
+            width: 100%;
+        }
+        input[type=submit]{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: #475993;
+            border: 3px solid #475993;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: bold;
+            cursor: pointer;
+            margin-bottom: 50px;
+            margin-right: 20px;
+       }
+       input[type=submit]:hover{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: white;
+            border: 3px solid #475993;
+            color: #475993;
+            padding: 16px 32px;
+            text-decoration: bold;
+            cursor: pointer;
+            margin-bottom: 50px;
+       }
+       input[type=reset]{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: #475993;
+            border: 3px solid #475993;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: bold;
+            cursor: pointer;
+            margin-bottom: 50px;
+            margin-left: 20px;
+       }
+       input[type=reset]:hover{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: white;
+            border: 3px solid #475993;
+            color: #475993;
+            padding: 16px 32px;
+            text-decoration: bold;
+            cursor: pointer;
+            margin-bottom: 50px;
+       }
+        footer{
+            width:100%;
+            text-align: center;
+            background-color: #475993;
+            color: white;
+            padding: 10px 0px 10px 0px;
+        }
+        
+    </style>
+    
     <body>
-        <center><img src="Images/Logo.png" width="100" height="100"> 
-        <br/><h1>Clinic Harmony</h1>
-            <h3 >Address : 10, Jalan Harmony,
-                <br/>11500 Pulau Pinang.</h3>
-            <p> social media icons </p></center>
-        <div>
-            <div >
-                <table>
+         <div id="topMenu">
+            
+            <table style="width: 100%;">
                 <tr>
-                        <td style="width:25%;"><a href="homepage.html" class="active">Home</a></td>
-                        <td style="width:25%;"> <a href="about.html" >About Us</a></td>
-                        <td style="width:25%;"><a href="services.html" >Services</a></td>
-                        <td  style="width:25%;"><a href="contactUs.html" >Contact Us</a></td>    
-                        <td  style="width:25%;"><a href="booking.html" >Book An Appointment</a></td>  
-                    </tr>
+                    <td style="width:10%;"> <img src="Images/Logo.png" width="100" height="100" align="center"> </td>
+            
+                    <td style="width:65%;"> <h1 align="left">Clinic Harmony </h1></td>
+                    
+                    <td style="width:15%;"> <img src="Images/profile.png" width="60" height="60" align="right"></td>
+                    
+                    <td style="width:10%;"><h3 style="font-size: 22px;">My Profile</h3></td>
+                </tr>
+            <table>
+                 
+            <br/>
+                
+            <table>
+                <tr>
+                    <td style="width:25%;"><a href="homepage.html" style="font-size :20px;">Home</a></td>
+                    <td style="width:25%;"> <a href="about.html" style="font-size :20px;">About Us</a></td>
+                    <td style="width:25%;"><a href="services.html" style="font-size :20px;">Services</a></td>
+                    <td  style="width:25%;"><a href="contactUs.html" style="font-size :20px;">Contact Us</a></td>    
+                    <td  style="width:25%;"><a href="booking.html" style="font-size :20px;">Book An Appointment</a></td>  
+                </tr>
+            </table>          
+            
+        </div>  
+        
+       <hr/>  
+       
+       <h1><center>Book An Apppointment</center></h1>
+       
+       <div id='content'>
 
-                </table>   
-                <hr/>    
-            </div>
-            
-            <h1><center>Book An Apppointment</center></h1>
-            
             <form action="booking.html" method="POST">
             <table>
                 <tr>
-                    <td><h3>1. Personal Details </h3></td>
-                </tr>
+                    <td><h2>1. Personal Details </h2></td>
+                </tr>  
                 
                 <tr height='80px'>
-                    <td style="width:30%;">Title :
+                    <td>Title :
                         <br/><input type="text" id="title" name="title"></td>
-                    <td style="width:30%;">First Name :
+                    <td>First Name :
                         <br/><input type="text" id="fname" name="fname"></td>
-                    <td style="width:30%;">Last Name :
+                    <td style="width: 40%;">Last Name :
                         <br/><input type="text" id="fname" name="lname"></td>
                 </tr>
-                
+
                 <tr height='80px'>
-                    <td style="width:40%;">Gender : 
+                    <td>Gender : 
                         <br/><select id="gender" name="gender">
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                           </select></td>
-                    <td style="width:40%;">Date of Birth :
+                    <td>Date of Birth :
                         <input type='date' id='dateBirth' name='dateBirth'></td>
-                    <td style="width:30%;">Are you over 18 ? :
+                    <td>Are you over 18 ? :
                         <br/><input type="radio" id='legal' name="legal" value="Yes">
                             <label for="legal">Yes</label>
                         <br/><input type="radio" id='legal' name="legal" value="No">
                             <label for="legal">No</label></td></td>
                 </tr>
-                
-                <tr height='50px'>
-                    <td style="width:30%;">Address Line 1 :
+
+                <tr height='80px'>
+                    <td>Address Line 1 :
                         <br/><input type="text" id="address1" name="address1"></td>
-                    <td style="width:30%;">Address Line 2 :
+                    <td>Address Line 2 :
                         <br/><input type="text" id="address2" name="address1"></td>
                 </tr>
-                
-                <tr height='50px'>
-                    <td style="width:30%;">City :
+
+                <tr height='80px'>
+                    <td>City :
                         <br/><input type="text" id="city" name="city"></td>
-                    <td style="width:30%;">ZIP or Postal Code :
+                    <td>ZIP or Postal Code :
                         <br/><input type="text" id="zip" name="zip"></td>
-                    <td style="width:30%;">State :
+                    <td style="width: 40%;">State :
                         <br/><input type="text" id="state" name="state"></td>
                 </tr>
-                
+
                 <tr height='80px'>
-                    <td style="width:30%;">Phone number :
+                    <td>Phone number :
                         <br/><input type="text" id="phoneno" name="phoneno"></td>
-                    <td style="width:30%;">Email :
+                    <td>Email :
                         <br/><input type="text" id="email" name="email"></td>
                 </tr>
-                
-               
-            
-                
-            
-                
+
                 <tr height='80px'>
-                    <td><h3>2. Appointment Details </h3></td>
+                    <td><h2>2. Appointment Details </h2></td>
                 </tr>
-                
+
                 <tr height='80px'>
-                    <td style="width:30%;">Prefered Date :
+                    <td>Prefered Date :
                         <br/><input type="date" id='date' name="date"></td>
-                    <td style="width:30%;">Preffered Time :
+                    <td>Preffered Time :
                         <br/><input type="time" id='time' name="time"></td>
                 </tr>
-                
             </table>
+                
+       </div>
+       
+       <div id="content2">
             
             <table> 
-                <tr height='80px'>
+                <tr height='100px'>
                     <td style="width:100%;">Has the patient been seen at Clinic Harmony in the past ? :
                         <br/><input type="radio" id='part2' name="part2" value="Yes">
                             <label for="part2">Yes</label>
@@ -113,7 +242,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             <label for="part2">No</label></td>
                 </tr>
                 
-                <tr height='80px'>
+                <tr height='100px'>
                     <td style="width:100%;">Does the patient have a diagnosis ? :
                         <br/><input type="radio" id='part2' name="part2" value="Yes">
                             <label for="part2">Yes</label>
@@ -121,22 +250,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             <label for="part2">No</label></td>
                 </tr>
                 
-                <tr height='80px'>
+                <tr height='100px'>
                     <td style="width:100%;">If yes, please describe :
                         <br/><textarea cols="100" row="10"></textarea></td>
                 </tr>
                 
-                <tr height='80px'>
+                <tr height='100px'>
                     <td style="width:100%;">Reason for appointment :
                         <br/><i>Please let us know why the patient needs this appointment. (i.e. symptoms or part of the body that is affected.) </i>
                         <br/><textarea cols="100" row="10"></textarea></td>
                 </tr>
-                
-                
             </table>
-                <br/><br/><center><input type="submit" value="Submit"></center>
             
+            <br/><br/><center><input type="submit" value="Submit"><input type="reset" value="Reset"></center>
+    
             </form>
+       </div>
+       
+        <footer>
+            
+            <P>Address : 18, Jalan Putih, 11500 Jelutong, Pulau Pinang</P>
+
+            <P>Email : clinicharmony@gmail.com</p>
+
+            <p>Phone number : 012-34567890</p>
+
+            <a href="#"><img src="Images/facebookIcon.png" width="40" height="40"></a>
+            &nbsp; &nbsp;<a href="#"><img src="Images/instagram.png" width="40" height="40"></a>
+            &nbsp;<a href="#"><img src="Images/whatsapp.png" width="42" height="42"></a></td>
+
+        </footer>
             
     </body>
 </html>

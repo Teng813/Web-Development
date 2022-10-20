@@ -10,41 +10,170 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
+        <style>
+        h1{
+            font-family: Georgia;
+            font-size :45px;
+            color: #475993;
+        }  
+        h2{
+            font-family: Georgia;
+            font-size :30px;
+            color: #475993;
+        }
+        h3{
+            font-family: Georgia;
+            font-size :25px;
+        }
+        p{
+            font-size: 20px;
+            font-family: Garamond; 
+        }
+        body{
+            font-size: 20px;
+            font-family: Garamond;
+            background-image: url("Images/wallpaper1.jpg");
+            background-size: auto;
+            background-size: contain;
+        }
+        hr{
+            border : 1px solid #475993;
+        }
+        #topMenu a:link {
+            font-family: Georgia;
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+        }
+        #topMenu {
+            padding: 0px 20px 0px 20px;
+        }
+        #topMenu img{
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        #topMenu a:visited {
+            color: black;
+        }  
+        #topMenu a:hover{
+            background-color: #475993;
+            color: white;
+        }
+        input[type=submit]{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: #475993;
+            border: 3px solid #475993;
+            color: white;
+            padding: 10px 80px 10px 80px;
+            text-decoration: bold;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: white;
+            border: 3px solid #475993;
+            color: #475993;
+            padding: 10px 80px 10px 80px;
+            text-decoration: bold;
+            cursor: pointer;
+        }
+        #register p{
+           text-align: center;
+        }
+        #register a:link {
+            display:inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #e6f6ff;
+            text-align: center;
+            padding: 15px 15px 15px 15px;
+            align-content: center;
+            font-family: Georgia;
+            font-size: 20px;
+            text-decoration: none;
+            color: #475993;
+        }
+        #register a:visited {
+            color: #475993;
+        }
+        #register a:hover{
+            color: white;
+            background-color: #475993;
+        }
+        footer{
+            width:100%;
+            text-align: center;
+            background-color: #475993;
+            color: white;
+            padding: 10px 0px 10px 0px;
+        }
+        
+    </style>
+    
     <body>
-        <center><img src="Images/Logo.png" width="100" height="100"> 
-        <br/><h1>Clinic Harmony</h1>
-            <h3 >Address : 10, Jalan Harmony,
-                <br/>11500 Pulau Pinang.</h3>
-            <p> social media icons </p></center>
-        <div>
-            <div >
-                <table>
+        
+         <div id="topMenu">
+            
+            <table style="width: 100%;">
                 <tr>
-                        <td style="width:25%;"><a href="homepage.html" class="active">Home</a></td>
-                        <td style="width:25%;"> <a href="about.html" >About Us</a></td>
-                        <td style="width:25%;"><a href="services.html" >Services</a></td>
-                        <td  style="width:25%;"><a href="contactUs.html" >Contact Us</a></td>    
-                        <td  style="width:25%;"><a href="booking.html" >Book An Appointment</a></td>  
-                    </tr>
+                    <td style="width:10%;"> <img src="Images/Logo.png" width="100" height="100" align="center"> </td>
+            
+                    <td style="width:65%;"> <h1 align="left">Clinic Harmony </h1></td>
+                    
+                    <td style="width:15%;"> <img src="Images/profile.png" width="60" height="60" align="right"></td>
+                    
+                    <td style="width:10%;"><h3 style="font-size: 22px;">My Profile</h3></td>
+                </tr>
+            <table>
+                 
+            <br/>
+                
+            <table>
+            <tr>
+                <td style="width:25%;"><a href="homepage.html" style="font-size :20px;">Home</a></td>
+                <td style="width:25%;"> <a href="about.html" style="font-size :20px;">About Us</a></td>
+                <td style="width:25%;"><a href="services.html" style="font-size :20px;">Services</a></td>
+                <td  style="width:25%;"><a href="contactUs.html" style="font-size :20px;">Contact Us</a></td>    
+                <td  style="width:25%;"><a href="booking.html" style="font-size :20px;">Book An Appointment</a></td>  
+            </tr>
 
-                </table>   
-                <hr/>    
-            </div>
+            </table>             
+        </div>  
+        
+        <hr/>
+
+        <div id="login">
             
             <h1><center>Login</center></h1>
             
             <center><table width="70%">
                     <tr height='80px'>
-                        <td><center>Username :
-                        <br/><input type="text" id="username" name="username" height="50px"></center></td>
+                        <td><center><b>Username : </b>
+                        <br/><input type="text" id="username" name="username" size="50"></center></td>
                     </tr>
                     
                     <tr height='80px'>
-                        <td><center>Password :
-                            <br/><input type="text" id="password" name="password"></center></td>
+                        <td><center><b>Password :</b>
+                            <br/><input type="text" id="password" name="password" size="50"></center></td>
+                    </tr>
+                    
+                    <tr height='40px'>
+                        <td><center><a href="#">Forgotten Password? </a></center></td>
                     </tr>
                 
                 </table>
-                <br/><input type="submit" value="Submit"></center>
+                <br/><input type="submit" value="Submit">
+                </center>
+           
+            </div>
+        
+        <div id="register">
+            <p><a href="#">Create an account now!</a> </p>
+        </div>
+        
+            
+        
     </body>
 </html>
