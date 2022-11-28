@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
 <html>
-        <head>
+    <head>
         <title>Clinic Harmony</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +14,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     
-        <style>
+    <style>
         
-         html, body {
+        html, body {
             overflow-x:hidden 
         } 
          
@@ -55,7 +57,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         }
         .title{
             margin-top: 40px;
-            margin-bottom: 10px;
+            margin-bottom: 40px;
+        }
+        .title2{
+            margin-top: -25px;    
         }
         .navbar-nav a:link {
             font-family: Georgia;
@@ -87,6 +92,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         }
         .navbar-brand{
             margin-right: 0px;
+        }
+        footer{
+            width:100%;
+            text-align: center;
+            background-color: #475993;
+            color: white;
+            padding: 10px 0px 10px 0px;
         }
         .navbar-toggler {
            border: 0 !important;
@@ -151,6 +163,42 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
        .navbar-toggler.collapsed .toggler-icon {
            background-color: #777777;
        }
+        .mapouter{
+            position:relative;
+            text-align:right;
+            height:500px;
+            width:660px;
+        }
+        .gmap_canvas{
+            overflow:hidden;
+            background:none !important;
+            height:500px;
+            width:660px;
+        }
+        input[type=submit]{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: #475993;
+            border: 3px solid #475993;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: bold;
+            cursor: pointer;
+            margin-bottom: 30px;
+            margin-top: 20px;
+       }
+       input[type=submit]:hover{
+            font-family: Georgia;
+            font-size: 20px;
+            background-color: white;
+            border: 3px solid #475993;
+            color: #475993;
+            padding: 16px 32px;
+            text-decoration: bold;
+            cursor: pointer;
+            margin-bottom: 30px;
+            margin-top: 20px;
+       }
        .col{
            vertical-align: top;
            line-height: 40px;
@@ -160,85 +208,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             height: 430px;
             margin-right: 30px;
         }
-        footer{
-            width:100%;
-            text-align: center;
-            background-color: #475993;
-            color: white;
-            padding: 10px 0px 10px 0px;
-        }
-        
-        /*login form*/
-        form{
-            padding: 0px 200px 0px 200px;
-        }
-        .form-label{
-            margin-top: 30px;
-            font-weight: bold;
-        }
        
-        .btn {
-            font-family: Georgia;
-            font-size: 20px;
-            background-color: #475993;
-            border: 3px solid #475993;
-            color: white;
-            padding: 15px 100px 15px 100px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-bottom: 30px;
-            margin-top: 30px;
-        }
-        .btn:hover{
-            font-family: Georgia;
-            font-size: 20px;
-            background-color: white;
-            border: 3px solid #475993;
-            color: #475993;
-            padding: 15px 100px 15px 100px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-bottom: 30px;
-            margin-top: 30px;
-       }
-       .form-control{
+       /*contact us form*/
+       .contact form
+        {
+            padding: 20px 200px 50px 200px;
             border-radius: .5rem;
-            border:#33485d solid;
-            padding : 15px 15px 15px 15px;
+        }
+        .contact form .flex
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .contact form .flex.inputBox span
+        {
+            display: block;
+            margin-bottom: 0px;
+        }
+       .contact form .flex .inputBox input
+       {
+           width: 100%;
+           padding: 15px 15px 15px 15px;
+           border:#475993 solid;
+           border-radius: .5rem;
+           background: white;
        }
-       ::placeholder{
-            font-size: 20px;
-            font-family: Garamond; 
+       .contact form .flex .inputBox textarea
+       {
+           width: 100%;
+           padding: 15px 15px 15px 15px;
+           border:#475993 solid;
+           border-radius: .5rem;
+           font-size: 1.6rem;
+           background: white;
        }
-       
-       /*register button*/
-       #register p{
-           text-align: center;
-        }
-        #register a:link {
-            display:inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 50px;
-            background-color: #e6f6ff; 
-            border: 2px solid #475993;
-            border-radius: .5rem;
-            text-align: center;
-            padding: 15px 15px 15px 15px;
-            align-content: center;
-            font-family: Georgia;
-            font-size: 20px;
-            text-decoration: none;
-            color: #475993;
-            font-family: Georgia;
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        #register a:hover{
-            color: white;
-            background-color: #475993;
-        }
 
        
          /*mobile size CSS*/
@@ -251,6 +255,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             }
             .title{
                 margin-bottom: 10px;
+            }
+            .title2{
+                margin-top: 25px;
+            }
+            .mapouter{
+                position: relative;
+                text-align:right;
+                height:400px;
+                width:320px;
+                padding-right: 50px !important;
+            }
+            .gmap_canvas{
+                overflow:hidden;
+                background:none !important;
+                height:400px;
+                width:320px;
+                margin-right: 50px !important;
             }
             .navbar-toggler.collapsed .toggler-icon {
                 margin-left: 350px;
@@ -293,13 +314,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 height: 280px;
                 margin-right: 30px;
             }
-            form{
-                padding: 0px 20px 0px 20px;
-            }
-        
+            /*contact us form*/
+            .contact form
+             {
+                 padding: 20px 50px 50px 50px;
+                 border-radius: .5rem;
+             }
+        }
     </style>
     
-    <body>       
+    <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
                 <a class="navbar-brand" href="homepage.html"> <img src="Images/Logo.png" width="110" height="100" align="center"></a><h1>Clinic Harmony </h1>
@@ -309,122 +333,102 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <span class="toggler-icon middle-bar"></span>
                     <span class="toggler-icon bottom-bar"></span>
                 </button>
-
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="homepage.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link" href="about.php">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="register.html">Register</a>
+                            <a class="nav-link" href="services.php">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="booking.html">Book An Apppointment</a>
+                            <a class="nav-link" href="contactUs.php" style="background-color: #475993; color: white; border-radius: .5rem;">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="history.html">History</a>
+                            <a class="nav-link" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
+                            <a class="nav-link" href="register.php">Register</a>
                         </li>
                     </ul>
-
+                    
                 </div>
-        </div>
+            </div>
     </nav>
         
-         <?php
-            ini_set('display_errors', 0);
-            error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+        <div class="line-1"></div>
         
-        echo'<div class="line-1"></div>
-
-            <h1 class="title"><center>Login</center></h1>
             
-            <form action="login.php" method="post" class="row g-3 needs-validation justify-content-md-center" novalidate>
- 
-                <div class="col-md-8">
-                    <label for="validationCustom01" class="form-label">Username : </label>
-                    <input name="username" type="text" class="form-control" id="validationCustom01" placeholder="Enter your username" required>
-                    <div class="invalid-feedback">
-                        Please enter your username.
+        <h1 class="title"><center>Contact Us</center></h1>
+          
+            <div class="container px-4">  
+                <div class="row gx-5">
+                    <div class="col">
+                        <h2>Contact Details</h2>
+                        <p><b>Clinic harmony is a medical clinic based in Jelutong, Penang.</b></p>
+                        <h3>&#9743; Contact No </h3> 012-34567890
+                        <h3><br/>&#9993; Email </h3>clinicHarmony@gmail.com
+                        <h3><br/>&#9750; Address</h3> 18, Jalan Putih, 11500 Jelutong, Pulau Pinang
+                    </div>
+                    <div class="col">
+                        <img src="Images/contactUs.jpg" class="img">
                     </div>
                 </div>
 
-               <div class="col-md-8">
-                    <label for="inputPassword" class="form-label">Password :</label>
-                    <div class="col-auto">
-                      <input name="password" type="password" id="inputPassword6" class="form-control" placeholder="Enter your password" aria-describedby="passwordHelpInline">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="700" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=georgetown&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                       frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
                     </div>
-                    <div class="invalid-feedback">
-                          Please enter your password.
+                    <div class="col">
+                        <h2>Our Location</h2>
+                        <a href="#"><img src="Images/waze.png" width="40" height="40"/></a><a href="#"><img src="Images/googleMap.png" width="70" height="40"/></a>
+                        <br/><br/><h3>Our Address </h3>18, Jalan Putih, 11500 Jelutong, Pulau Pinang
+                        <br/><br/><h3>Opening Hours</h3>
+                        Monday - Friday 09.00a.m. - 08.00p.m.
+                        <br/>Saturday & Sunday 09.00a.m. - 01.00p.m.
+                        <br/>Closed on Public Holiday
                     </div>
-               </div>
-
-
-                <div class="col-md-8">
-                    <center><input name="signin" type="submit" value="Login"></center>
                 </div>
+                </div>
+        
+        <section class="contact">
+            <h1 class="title" align="center">Contact Us</h1>
+            <h3 align="center" class="title2">Send us a message now!</h3>
+            <form action="php_rest_clinicReservation/api/post/cusForm.php" method="post">
+                <div class="flex">
+                    <div class="inputBox"style="flex: 1 1 70rem">
+                        <span style="text-align: left;">Your Name : </span>
+                        <input type="text" placeholder="Enter Your Name" name="name" required>
+                    </div>
+                    
+                    <div class="inputBox"style="flex: 1 1 70rem">
+                        <span>Your Email : </span>
+                        <input type="email" placeholder="Enter Your Email" name="email" required>
+                    </div>
+                    
+                    <div class="inputBox"style="flex: 1 1 70rem">
+                        <span>Subject : </span>
+                        <input type="text" placeholder="Enter Subject" name="subject" required>
+                   </div>
+                    
+                    <div class="inputBox"style="flex: 1 1 70rem">
+                        <span>Your Message : </span>
+                            <textarea name="message"placeholder="Enter Your Message" required cols="30"rows="7"></textarea>
+                    </div>
+                  
+                </div>  
+
+                <center><input type="submit" value="Send Message" name="send" ></center>
+                 
             </form>
+        </section>
             
-         <div id="register">
-            <p><a href="#">Create an account now!</a> </p>
-        </div>';
-        
-            if(isset($_POST['signin'])){
-				
-            $id = $_POST['username'];
-            $password = $_POST['password'];
-
-            $dbc=mysqli_connect("localhost","root","");
-            mysqli_select_db($dbc, "clinic_reservation");
-
-            if(substr($id, 0, 1)=="U"){
-
-                    $result=mysqli_query($dbc, "Select * from user_table where user_id = '$id'")
-                    or 
-                    die("User ID is Not Found" .mysqli_error($dbc));
-
-                    $row=mysqli_fetch_array($result);
-                    if ($row['user_id']== $id && $row['user_password'] == $password){
-                            header('Location:homepage.html');
-
-                            session_start();	
-                            $_SESSION['identifier']=$_POST['user_id'];
-
-                    }
-                    else{
-                            echo"<h1 style='text-align: center'>ID or Password Incorrect</h1>";
-                    }
-            }
-            else if(substr($uid, 0, 1)=="D"){
-
-                    $result=mysqli_query($dbc, "Select * from doctor_table where doctor_id = '$id' and doctor_password = '$password'")
-                    or 
-                    die("Failed to query the database canteen" .mysqli_error($dbc));
-
-                    $row=mysqli_fetch_array($result);
-                    if ($row['doctor_id']== $id && $row['doctor_password'] == $password){
-                            header('Location:homepage.html');
-
-                            session_start();	
-                            $_SESSION['identifier']=$_POST['doctor_id'];
-
-                    }
-                    else{
-                            echo"<h1 style='text-align: center'>ID or Password Incorrect</h1>";
-                    }
-            }
-            else{
-                    echo"<h1 style='text-align: center'>ID Not Found</h1>";
-            }
-            }
-	?>
-            
-      <footer>
+        <footer>
             
             <P>Address : 18, Jalan Putih, 11500 Jelutong, Pulau Pinang</P>
 
@@ -436,33 +440,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             &nbsp; &nbsp;<a href="#"><img src="Images/instagram.png" width="40" height="40"></a>
             &nbsp;<a href="#"><img src="Images/whatsapp.png" width="42" height="42"></a></td>
 
-        </footer>  
-        
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>    
-        
-        <script>
-            (function () {
-                'use strict'
-
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.querySelectorAll('.needs-validation')
-
-                // Loop over them and prevent submission
-                Array.prototype.slice.call(forms)
-                  .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                      if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                      }
-
-                      form.classList.add('was-validated')
-                    }, false)
-                  })
-              })()
-        </script>           
-        
+             
     </body>
 </html>

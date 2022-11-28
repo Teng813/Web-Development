@@ -4,7 +4,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
 <html>
-    <head>
+        <head>
         <title>Clinic Harmony</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     
-    <style>
-      
-        html, body {
+        <style>
+        
+         html, body {
             overflow-x:hidden 
         } 
          
@@ -55,7 +55,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         }
         .title{
             margin-top: 40px;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
         }
         .navbar-nav a:link {
             font-family: Georgia;
@@ -167,13 +167,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             color: white;
             padding: 10px 0px 10px 0px;
         }
-       
-       /*register form*/
+        
+        /*login form*/
         form{
             padding: 0px 200px 0px 200px;
         }
         .form-label{
-            margin-top: 20px;
+            margin-top: 30px;
             font-weight: bold;
         }
        
@@ -183,11 +183,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             background-color: #475993;
             border: 3px solid #475993;
             color: white;
-            padding: 16px 32px;
+            padding: 15px 100px 15px 100px;
             font-weight: bold;
             cursor: pointer;
-            margin-bottom: 70px;
-            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
         .btn:hover{
             font-family: Georgia;
@@ -195,11 +195,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             background-color: white;
             border: 3px solid #475993;
             color: #475993;
-            padding: 16px 32px;
+            padding: 15px 100px 15px 100px;
             font-weight: bold;
             cursor: pointer;
-            margin-bottom: 70px;
-            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-top: 30px;
        }
        .form-control{
             border-radius: .5rem;
@@ -211,6 +211,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             font-family: Garamond; 
        }
        
+       /*register button*/
+       #register p{
+           text-align: center;
+        }
+        #register a:link {
+            display:inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            background-color: #e6f6ff; 
+            border: 2px solid #475993;
+            border-radius: .5rem;
+            text-align: center;
+            padding: 15px 15px 15px 15px;
+            align-content: center;
+            font-family: Georgia;
+            font-size: 20px;
+            text-decoration: none;
+            color: #475993;
+            font-family: Georgia;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #register a:hover{
+            color: white;
+            background-color: #475993;
+        }
+
        
          /*mobile size CSS*/
        @media only screen and (max-width: 600px) {
@@ -259,14 +288,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 padding: 0px 55px 30px 55px;
                 line-height: 50px;
             }
+            .img{
+                width: 320px;
+                height: 280px;
+                margin-right: 30px;
+            }
             form{
                 padding: 0px 20px 0px 20px;
             }
-            
+        
     </style>
     
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <body>       
+        <!--<nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
                 <a class="navbar-brand" href="homepage.html"> <img src="Images/Logo.png" width="110" height="100" align="center"></a><h1>Clinic Harmony </h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -290,154 +324,107 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <li class="nav-item">
                             <a class="nav-link" href="booking.html">Book An Apppointment</a>
                         </li>
-                        
                         <li class="nav-item">
                             <a class="nav-link" href="history.html">History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="profile.html">Profile</a>
+                            <a class="nav-link" href="#">Profile</a>
                         </li>
                     </ul>
 
                 </div>
         </div>
-    </nav>
+    </nav>-->
         
-       <div class="line-1"></div>
-       
-       <h1 class="title"><center>Book An Apppointment</center></h1>
-      
-        <form class="row g-3 needs-validation" novalidate>
-           
-            <h2>1. Personal Details </h2>
-           
-            <div class="col-md-6">
-                <label for="validationCustom01" class="form-label">Username : </label>
-                <input type="text" class="form-control form-control-sm rounded-0" id="validationCustom01" placeholder="Enter your username" required>
-                <div class="valid-feedback">
-                    Looks good!
+         <?php
+            ini_set('display_errors', 0);
+            error_reporting(E_ERROR | E_WARNING | E_PARSE); 
+        
+        echo'<div class="line-1"></div>
+
+            <h1 class="title"><center>Login</center></h1>
+            
+            <form action="#" method="post" class="row g-3 needs-validation justify-content-md-center" novalidate>
+ 
+                <div class="col-md-8">
+                    <label for="validationCustom01" class="form-label">Username : </label>
+                    <input name="username" type="text" class="form-control" id="validationCustom01" placeholder="Enter your username" required>
+                    <div class="invalid-feedback">
+                        Please enter your username.
+                    </div>
                 </div>
-                <div class="invalid-feedback">
-                      Please enter your username.
-                </div>
-            </div>
-           
-            <div class="col-md-6">
-                <label for="validationCustom02" class="form-label">Name : </label>
-                <input type="text" class="form-control form-control-lg" id="validationCustom02" placeholder="Enter your name" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-                <div class="invalid-feedback">
-                    Please enter your name.
-                </div>
-            </div>
-           
-           <div class="col-md-6">
-                <label for="validationFormCheck2" class="form-label">Gender</label>
-                
-                <div class="form-check">
-                <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck2" value="male">Male</label>
-              </div>
-              <div class="form-check mb-3">
-                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck3" value="female">Female</label>
-                <div class="invalid-feedback">
-                    Please select your gender</div>
+
+               <div class="col-md-8">
+                    <label for="inputPassword" class="form-label">Password :</label>
+                    <div class="col-auto">
+                      <input name="password" type="password" id="inputPassword6" class="form-control" placeholder="Enter your password" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="invalid-feedback">
+                          Please enter your password.
+                    </div>
                </div>
-            </div>
-            
-            <div class="col-md-6">
-                <label for="validationFormCheck4" class="form-label">Are you over 18?</label>
-                
-                <div class="form-check">
-                <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck4" value="legal">Yes</label>
-              </div>
-              <div class="form-check mb-3">
-                <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck5" value="illegal">No</label>
-                <div class="invalid-feedback">
-                    Please select an answer.</div>
-               </div>
-            </div>
-           
-           <div class="col-md-6">
-                <label for="validationCustom05" class="form-label">Email : </label>
-                <input type="text" class="form-control form-control-lg" id="validationCustom05" placeholder="Enter your email" required>
-                <div class="valid-feedback">
-                    Looks good!
+
+
+                <div class="col-md-8">
+                    <center><input name="signin" type="submit" value="Login"></center>
                 </div>
-                <div class="invalid-feedback">
-                      Please enter your email.
-                </div>
-           </div>
+            </form>
             
-            <div class="col-md-6">
-                <label for="validationCustom11" class="form-label">Phone Number : </label>
-                <input type="text" class="form-control form-control-lg" id="validationCustom11" placeholder="Enter your phone number" required>
-                <div class="invalid-feedback">
-                      Please enter your phone number.
-                </div>
-           </div>
-           
-            <h2 style="margin-top: 50px;">2. Appointment Details </h2>
-                
-            <div class="col-md-6">
-                <label for="validationCustom06" class="form-label">Preferred Date : </label>
-                <input type="date" id='date' name="date" class="form-control form-control-lg" id="validationCustom06" required>
-            </div>
-                    
-            <div class="col-md-6">
-                <label for="validationCustom07" class="form-label">Preferred Time : </label>
-                <input type="time" id='time' name="time" class="form-control form-control-lg" id="validationCustom07" required>
-            </div>
-           
-            <div class="col-md-12">
-                <label for="validationFormCheck8" class="form-label">Does the patient have a diagnosis ? </label>
-                
-                <div class="form-check">
-                <input type="radio" class="form-check-input" id="validationFormCheck8" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck8" value="diagnosis">Yes</label>
-              </div>
-              <div class="form-check mb-3">
-                <input type="radio" class="form-check-input" id="validationFormCheck9" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck9" value="notDiagnosis">No</label>
-                <div class="invalid-feedback">
-                    Please select an answer.</div>
-               </div>
-            </div>
+         <div id="register">
+            <p><a href="#">Create an account now!</a> </p>
+        </div>';
+        
+            if(isset($_POST['signin'])){
+				
+            $id = $_POST['username'];
+            $password = $_POST['password'];
+
+            $dbc=mysqli_connect("localhost","root","");
+            mysqli_select_db($dbc, "clinic_reservation");
+
+            if(substr($id, 0, 1)=="U"){
+
+                    $result=mysqli_query($dbc, "Select * from user_table where user_id = '$id'")
+                    or 
+                    die("User ID is Not Found" .mysqli_error($dbc));
+
+                    $row=mysqli_fetch_array($result);
+                    if ($row['user_id']== $id && $row['user_password'] == $password){
+                            header('Location:homepage.html');
+
+                            session_start();	
+                            $_SESSION['identifier']=$_POST['user_id'];
+
+                    }
+                    else{
+                            echo"<h1 style='text-align: center'>ID or Password Incorrect</h1>";
+                    }
+            }
+            else if(substr($uid, 0, 1)=="D"){
+
+                    $result=mysqli_query($dbc, "Select * from doctor_table where doctor_id = '$id' and doctor_password = '$password'")
+                    or 
+                    die("Failed to query the database canteen" .mysqli_error($dbc));
+
+                    $row=mysqli_fetch_array($result);
+                    if ($row['doctor_id']== $id && $row['doctor_password'] == $password){
+                            header('Location:homepage.html');
+
+                            session_start();	
+                            $_SESSION['identifier']=$_POST['doctor_id'];
+
+                    }
+                    else{
+                            echo"<h1 style='text-align: center'>ID or Password Incorrect</h1>";
+                    }
+            }
+            else{
+                    echo"<h1 style='text-align: center'>ID Not Found</h1>";
+            }
+            }
+	?>
             
-            <div class="col-md-12">
-                <label class="form-label">If yes, please describe : </label>
-                <input type="text" class="form-control form-control-lg">
-            </div>
-            
-           <div class="col-12" style="margin-top: 50px;">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
-              </div>
-            </div>
-            
-           
-            <div class="col-6" style="text-align: right;">
-              <button class="btn btn-primary" type="submit">Submit</button>
-            </div>
-            
-            <div class="col-6">
-                <button class="btn btn-primary" type="reset">Reset</button>
-            </div>
-            
-    </form>
-       
-        <footer>
+      <footer>
             
             <P>Address : 18, Jalan Putih, 11500 Jelutong, Pulau Pinang</P>
 
@@ -449,8 +436,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             &nbsp; &nbsp;<a href="#"><img src="Images/instagram.png" width="40" height="40"></a>
             &nbsp;<a href="#"><img src="Images/whatsapp.png" width="42" height="42"></a></td>
 
-        </footer>
-       
+        </footer>  
+        
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>    
@@ -475,7 +462,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     }, false)
                   })
               })()
-        </script>
-            
+        </script>           
+        
     </body>
 </html>
