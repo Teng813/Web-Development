@@ -226,8 +226,7 @@ mysqli_select_db($dbc, "clinic_reservation");
                                     </select>
                                 </div>
                                  <div class="form-group mb-2">
-                                    <label for="end_datetime" class="control-label">Status</label>
-                                    <label for="doctorName" class="control-label">Doctor Name</label>
+                                    <label for="status" class="control-label">Status</label>
                                     <select name="status" class="form-select form-control form-control-sm rounded-0" id="validationDefault01" required>
                                         <option value="Pending">Pending</option>
                                         <option value="Approved">Approved</option>
@@ -247,8 +246,7 @@ mysqli_select_db($dbc, "clinic_reservation");
                 </div>
             </div>
         </div>
-    
-    </div>
+ 
     <!-- Event Details Modal -->
     <div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
         <div class="modal-dialog modal-dialog-centered">

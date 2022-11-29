@@ -370,7 +370,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="homepage.html"> <img src="Images/Logo.png" width="110" height="100" align="center"></a><h1 class="title">Clinic Harmony </h1>
+                <a class="navbar-brand" href="homepage.php"> <img src="Images/Logo.png" width="110" height="100" align="center"></a><h1 class="title">Clinic Harmony </h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon top-bar"></span>
@@ -419,7 +419,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <div class="carousel-caption">
                         <h3 style="color: white;">Medical services that you can trust. </h3>
                         <h1 style="color: #FFFF8F;">Welcome to Clinic Harmony</h1>
-                        <button type="button" class="btn btn-danger"><a href="booking.html"style="text-decoration:none;color: white;">BOOK AN APPOINTMENT NOW</a></button>
+                        <button type="button" class="btn btn-danger"><a href="login.php" style="text-decoration:none;color: white;">BOOK AN APPOINTMENT NOW</a></button>
                    </div>
                 </div>
                 
@@ -428,7 +428,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <div class="carousel-caption">
                         <h3 style="color: white;">Medical services that you can trust. </h3>
                         <h1 style="color: #FFFF8F">Welcome to Clinic Harmony</h1>
-                        <button type="button" class="btn btn-danger"><a href="booking.html"style="text-decoration:none;color: white;">BOOK AN APPOINTMENT NOW</a></button>
+                        <button type="button" class="btn btn-danger"><a href="login.php" style="text-decoration:none;color: white;">BOOK AN APPOINTMENT NOW</a></button>
                     </div>
                 </div>
                   
@@ -437,7 +437,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <div class="carousel-caption">
                         <h3 style="color: white;">Medical services that you can trust. </h3>
                         <h1 style="color: #FFFF8F;">Join Us As A Member Now! </h1>
-                         <button type="button" class="btn btn-danger"><a href="login.html"style="text-decoration:none;color: white;">REGISTER</a></button>
+                         <button type="button" class="btn btn-danger"><a href="register.php" style="text-decoration:none;color: white;">REGISTER</a></button>
                     </div>
                 </div>
                 
