@@ -177,8 +177,8 @@ mysqli_select_db($dbc, "clinic_reservation");
 <?php 
 
     $doctorID=$_SESSION['identifier'];
-    $dname1 = "Doctor Name";
-    $dname2 = "Doctor Name2";
+    $dname1 = "Alex Lim";
+    $dname2 = "Joseph Cheah";
     
     if ($doctorID=='D001'){
         $schedules = mysqli_query($dbc, "SELECT * FROM booking_table WHERE doctor_name='$dname1'");

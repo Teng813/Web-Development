@@ -142,7 +142,7 @@ $bookingID = $_SESSION['identifier'];
                 <div id="calendar"></div>
             </div>
             
-            <?php if (substr($bookingID, 0, 1)=="U"){
+            <?php
             echo'<div class="col-md-3">
                 <div class="cardt rounded-0 shadow">
                     <div class="card-header bg-gradient bg-primary text-light">
@@ -233,6 +233,7 @@ $bookingID = $_SESSION['identifier'];
                                     ?>
                                 <?php echo'</select>
                                 </div>
+                                
                             </div>  
                             </form>
                         </div>
@@ -243,12 +244,10 @@ $bookingID = $_SESSION['identifier'];
                             <input class="button" type="reset">   
                         </div>
                     </div>
-            </div>';} ?>
+            </div>'; ?>
             </div>
         </div>
-    </div>
     
-    </div>
     <!-- Event Details Modal -->
     <div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
         <div class="modal-dialog modal-dialog-centered">

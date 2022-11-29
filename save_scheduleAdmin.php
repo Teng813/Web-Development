@@ -32,8 +32,6 @@ if(isset($_POST['save'])){
                 WHERE booking_id='$bookingID'";
         mysqli_query($dbc,$query1);    
 
-        echo "<script> alert('Status Updated!');window.location= \"admintimetable.php\"; </script>";
-
     require 'PHPMailer/src/Exception.php';
     require 'PHPMailer/src/PHPMailer.php';
     require 'PHPMailer/src/SMTP.php';
@@ -58,6 +56,9 @@ if(isset($_POST['save'])){
         $mail->Body = 'Dear Customer, your booking status have been updated to '.$status.', thank you for choosing Clinic Harmony!';
 
         $mail->send();
+        
+         echo "<script> alert('Information updated');window.location= \"admintimetable.php\"; </script>";
+
 
 }
 ?>              

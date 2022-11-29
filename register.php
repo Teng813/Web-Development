@@ -287,7 +287,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="homepage.html"> <img src="Images/Logo.png" width="110" height="100" align="center"></a><h1>Clinic Harmony </h1>
+                <a class="navbar-brand" href="homepage.php"> <img src="Images/Logo.png" width="110" height="100" align="center"></a><h1>Clinic Harmony </h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon top-bar"></span>
@@ -369,12 +369,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 
                 <div class="form-check">
                     <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required>
-                    <label class="form-check-label" for="validationFormCheck1" value="male">Male</label>
+                    <label name="radio-stacked" class="form-check-label" for="validationFormCheck1" value="male">Male</label>
                 </div>
                 
                 <div class="form-check mb-3">
                     <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
-                    <label class="form-check-label" for="validationFormCheck2" value="female">Female</label>
+                    <label name="radio-stacked" class="form-check-label" for="validationFormCheck2" value="female">Female</label>
                     <div class="invalid-feedback">
                         Please select your gender.
                     </div>
